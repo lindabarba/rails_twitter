@@ -1,0 +1,9 @@
+<h1>Today's Tweets</h1>
+
+<ul>
+    <% @tweets.each do |tweet| %>
+        <li>
+            <strong><%= link_to tweet.handle, tweet_path(tweet) %></strong> - <%= tweet.content %>
+        </li>
+    <% end %>
+</ul>
