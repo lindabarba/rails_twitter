@@ -4,4 +4,12 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   Character.create(name: 'Luke', movie: movies.tweets)
+
+
+Tweet.destroy_all
+
+tweets = Tweet.create([
+    {handle: "Hotdog", content: "Some stuff said here like meow."},
+    {handle: "Mrs. Pickles", content: "Some stuff said here like meow."}
+])
